@@ -37,3 +37,6 @@ jobs:
     - name: Test with unittest
       run: |
         python -m unittest
+      
+    - name: Report to codecov
+      uses: codecov/codecov-action@v3
