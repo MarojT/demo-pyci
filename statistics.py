@@ -1,3 +1,6 @@
+"""Module containing functions for calculating some statistics."""
+from math import sqrt
+
 def average(data):
     """Return the average of a list of numeric values in data."""
     if len(data) == 0:
@@ -36,7 +39,7 @@ def variance(data):
     n = len(data)
     if n == 0:
         raise ValueError("Must have at least one value")
-    average = sum(data) / n
+    average = sum(data)
     return sum([(x - average) ** 2 for x in data])
 
 
